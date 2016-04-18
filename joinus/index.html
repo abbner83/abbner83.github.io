@@ -23,20 +23,63 @@
                 position:relative;
                 height:10%;
             }
-            .title{
-                padding:30px;
-                color:rgba(150, 20, 60, 1);
+            @media screen and (max-width: 599px) {
+                .title{
+                    padding:15px 0;
+                    color:rgba(150, 20, 60, 1);
+                }
+                p,li{
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+                h1{
+                    padding:0 0 20px 0;
+                    font-size: 30px;
+                }
+                h2{
+                    line-height: 22px;
+                    font-size: 22px;
+                }
+                h3{
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+                hr {
+                    height: 1px;
+                    background-color:#fff;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
             }
-            p,li{
-                line-height: 30px;
-                font-size: 15px;
+            @media screen and (min-width: 600px){
+                .title{
+                    padding:30px 0;
+                    color:rgba(150, 20, 60, 1);
+                }
+                p,li{
+                    line-height: 32px;
+                    font-size: 16px;
+                }
+                h1{
+                    padding:0 0 50px 0;
+                    font-size: 50px;
+                }
+                h2{
+                    line-height: 32px;
+                    font-size: 30px;
+                }
+                h3{
+                    line-height: 35px;
+                    font-size: 25px;
+                }
+                hr {
+                    height: 1px;
+                    background-color:#fff;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
             }
-            hr {
-                height: 1px;
-                background-color:#fff;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
+            
         </style>
     </head>
     
@@ -52,18 +95,18 @@
             <hr>
             <div class="row"><img src="images/Header.jpg" class="img-responsive"></div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-xs-12">
                     <div class="title">
                         <h2><strong>Who are we?</strong></h2>
                     </div>
                     <p>
-                        我們是一群想改善人們機車騎乘經驗的創業夥伴，我們相信騎機車時儘管雙手無法離開機車握把，但也不代表我們就該被迫處於一個「完全離線、無法方便取得當下所需資訊」的不便狀態，<u>換言之，我們的安全帽不該只是保護頭部，也要變得更聰明</u>。
+                        我們是一群想改善人們機車騎乘經驗的創業夥伴，我們相信騎機車時儘管雙手無法離開機車握把，但也不代表我們就該遷就一個「完全離線、無法方便取得當下所需資訊」的不便狀態，<u>換言之，我們的安全帽不該只是保護頭部，也要變得更聰明</u>。
                     </p>
                     <p>
                         台灣過去幾十年累積了豐富的的資通訊技術、軟硬體整合經驗及高效率生產流程等獨特優勢，因此我們也相信一頂真正符合現代人需要的智慧安全帽只有在台灣可以被真正做出來！
                     </p>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-5">
                     <p>
                         我們計畫設計研發搭載最新擴增實境（Augmented Reality）影像投射技術的智慧安全帽，搭配內建語音操控系統，讓使用者在騎乘機車時可聲控操作多項功能，隨時獲得所需資訊，最終目標是讓所有人的騎乘經驗更舒適、方便且愉快。
                     </p>
@@ -71,7 +114,7 @@
                         台灣機車數量已經突破1,400萬台，東南亞地區的機車總數也超過4.3億台，且仍逐年快速成長中，我們GHOSTA團隊將以台灣為出發點，迅速拓展至亞洲其他地區，進軍全世界！
                     </p>
                 </div>
-                <div class="col-sm-5"><img src="images/Image%2001.png" class="img-responsive"></div>
+                <div class="col-md-7"><img src="images/Image%2001.png" class="img-responsive"></div>
             </div>
             
             <div class="row">
@@ -112,14 +155,15 @@
                         <strong>2016年初，我們順利完成了種子輪募資，蓄勢待發，正全速邁向下一個重要里程碑：<u>我們的產品正式上市，開始改變消費者的機車騎乘經驗！</u></strong>
                     </p>
                 </div>
-                
-            </div>
-            
-            <div class="row">
-                    <h1 style="text-align:center"><strong><br/>We are Hiring!</strong></h1>
             </div>
             
             <hr>
+            
+            <div class="row">
+                <h1 style="text-align:center">
+                    <strong><br/><u>We Are Hiring!</u></strong>
+                </h1>
+            </div>
             
             <div class="row">
                 <div class="col-md-7 col-md-push-5" style="color:rgba(150, 20, 60, 1)">
@@ -149,7 +193,7 @@
                     <p>薪資範圍</p>
                     <ul>
                         <li>
-                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇<br/>（年薪80萬~120萬）
+                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇（年薪80萬~120萬）
                         </li>
                     </ul>
                 </div>
@@ -182,7 +226,7 @@
                     <p>薪資範圍</p>
                     <ul>
                         <li>
-                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇<br/>（年薪80萬~120萬）
+                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇（年薪80萬~120萬）
                         </li>
                     </ul>
                 </div>
@@ -221,7 +265,7 @@
                     <p>薪資範圍</p>
                     <ul>
                         <li>
-                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇<br/>（年薪80萬~120萬）
+                            提供優於勞基法之員工福利，以及高於市場行情的薪資待遇（月薪21500圓）
                         </li>
                     </ul>
                 </div>
@@ -229,14 +273,26 @@
             
             <hr>
             
-            <div class="row" style="padding:0 0 20px 0">
-                <h4 style="text-align:center;color:rgba(150, 20, 60, 1)"><strong>Contact Us</strong></h4>
-                <p style="text-align:center">電話：+886-987-654-321<br/>email：ghosta@gmail.com</p>
-                <div class="col-sm-1 col-sm-push-5 col-xs-2 col-xs-push-4">
-                    <a href="https://www.facebook.com/ghostahelmet"target="_blank"><img src="images/fb.png" style="width:80%"></a>
-                </div>
-                <div class="col-sm-1 col-sm-push-5 col-xs-2 col-xs-push-4">
-                    <a href="http://www.ghosta.me/"target="_blank"><img src="images/logo.png" style="width:60%"></a>
+            <div class="row" style="padding:0 0 25px 0">
+                <h3 style="text-align:center;color:rgba(150, 20, 60, 1)">
+                    <strong>歡迎加入我們，盡速與我們聯繫！</strong>
+                </h3>
+                <p style="text-align:center">
+                    電話：+886-987-654-321<br/>
+                    email：ghosta@gmail.com<br />
+                    website : <a href="http://www.ghosta.me/"target="_blank">
+                                www.ghosta.me</a>
+                </p>
+                <div class="col-sm-2 col-sm-push-5 col-xs-4 col-xs-push-4">
+                    <a href="https://angel.co/ghosta"target="_blank">
+                        <img src="images/angel.png" width="30%">
+                    </a>
+                    <a href="https://www.facebook.com/ghostahelmet"target="_blank">
+                        <img src="images/fb.png" width="30%">
+                    </a>
+                    <a href="https://twitter.com/ghosta_helmet"target="_blank">
+                        <img src="images/twitter.png" width="30%">
+                    </a>
                 </div>
             </div>
             
